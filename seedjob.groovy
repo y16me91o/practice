@@ -1,8 +1,12 @@
 job("Helloworld-war via seed DSL") {
     description "Builds helloworld-war job on ${new Date()} via seed DSL"
     scm {
-        git("git@github.com:y16me91o/practice.git",helloworld-war-seed)
-        
+        git {
+          remote {
+            url("https://github.com/y16me91o/practice.git")
+          }
+          branch('helloworld-war-seed')
+        }
     }
     steps {
         shell "Look: I'm building helloworld-war-seed!"
