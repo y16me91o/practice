@@ -1,7 +1,7 @@
 job("Helloworld-war via seed DSL") {
     description "Builds helloworld-war job on ${new Date()} via seed DSL"
     scm {
-        git("https://github.com/y16me91o/practice.git",helloworld-war-seed)
+        git("git@github.com:y16me91o/practice.git",helloworld-war-seed)
         
     }
     steps {
