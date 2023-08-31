@@ -10,7 +10,7 @@ job("Helloworld-war via seed DSL") {
     }
     steps {
         shell "Look: I'm building helloworld-war-seed!"
-        maveen('clean package')
+        maven('clean package')
     }
     publishers{
         archiveArtifacts '**/*.war'
