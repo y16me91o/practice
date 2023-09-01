@@ -9,7 +9,7 @@ job("Helloworld-war via seed DSL") {
         }
     }
     steps {
-        sh 'mvn clean package'
+        maven('clean package')
     }
     publishers{
         archiveArtifacts '**/*.war'
