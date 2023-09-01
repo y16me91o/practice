@@ -9,8 +9,7 @@ job("Helloworld-war via seed DSL") {
         }
     }
     steps {
-        shell "Look: I'm building helloworld-war-seed!"
-        maven('clean package')
+        sh 'mvn clean package'
     }
     publishers{
         archiveArtifacts '**/*.war'
